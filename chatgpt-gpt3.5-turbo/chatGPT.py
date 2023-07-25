@@ -1,6 +1,6 @@
 import os
 import openai
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 messages = [
     {"role": "system", "content" : "Hi Barbie!"}
